@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen&family=Oxygen+Mono&display=swap');
+
+:root{
+  --almond:#FFEBCD;
+  --apple-green:#8DB600;
+  --font-size: 1.3rem;
+  --deep-saffron:#FF9933;
+  --earth-green:#61A775;
+  --mono:"Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+  --white:#f7f8fa;
+  --black:#171321;
+  
+}
+
+html{
+  box-sizing:border-box;
+  
+}
+*,
+*::before,
+*::after{
+  box-sizing:inherit;
+  
+}
+body{
+  margin:0px;
+  padding:0px;
+  font-size:var(--sans);
+  background-color:var(--white);
+  color:var(--black);
+  font-size:var(--font-size);
+  
+}
+h1,h2,h3{
+  margin:0;
+  
+}
+a{
+  color:var(--apple-green);
+ 
+  
+}
+a:hover{
+  color:var(--earth-green);
+  text-decoration:none;
+}
+#intro{
+  padding-bottom:10rem;
+  
+}
+#intro p{
+  font-size:1rem;
+  line-height:1.5;
+}
+
+#intro .name{
+  font-family: --var(mono);
+  
+}
+.name span{
+  font-size: 4rem;
+  display:block;
+  font-family: var(--sans);
+  color: var(--apple-green);
+}
+#intro h2{
+  font-size:4rem;
+  font-weight:normal;
+  
+}
+#contact{
+  width:400px;
+  text-align:center;
+  margin: 0 auto;
+  background-color:var(--almond);
+  padding:3rem auto;
+  
+}
+
+#contact a{
+  padding:12px;
+  background-color: var(--apple-green);
+  color:var(--white);
+  border-radius: 5%;
+  
+}
+#contact p:last-child {
+  margin-top:3rem;
+}
+
+nav{
+  font-family:var(--mono);
+  font-size: 80%;
+  padding:1rem;
+}
+
+#navbar{
+  font-size:var(--font-size);
+}
+.nav-list{
+  list-style-type:none;
+  display:flex;
+  flex-direction:row;
+  margin:0;
+  padding:0;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items:center;
+  gap:2rem;
+  
+}
+nav h1 a{
+  color:var(--black);
+  font-family:var(--sans);
+  
+}
+nav h1 a i{
+  color:var(--apple-green);
+/*   font-size: 150%; */
+}
+nav h1 a i:hover{
+  color:var(--earth-green);
+  
+}
+nav li:first-child{
+/*   flex-basis:100%; */
+  text-align:left;
+  margin-right:auto;
+}
+
+nav [class*="bxl-"]{
+  font-size:150%;
+  
+}
+
+nav h1 [class*="bxl-"]{
+  font-size:100%;
+  
+}
+.nav-list li a{
+  text-decoration:none;
+  color:var(--black);
+  display:block;
+}
+.nav-list li a:hover{
+  color:var(--apple-green);
+}
+.sr-only{
+  display:none;
+}
+
+nav li:last-child{
+  padding: 0.7rem;
+  background-color: var(--apple-green);
+  color:var(--white);
+  border-radius: 5%;
+  font-weight:600;
+}
+nav li:last-child:hover{
+  background-color:var(--black);
+  color:var(--white);
+  
+}
+
+nav li [class = "nav-email"]{
+  font-weight:600;
+/*   color:var(--white); */
+  
+}
+nav li [class = "nav-email"]:hover{
+  color:var(--white);
+  
+}
