@@ -56,26 +56,6 @@ a:hover {
 
 
 
-#contact {
-    width: 400px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: var(--almond);
-    padding: 3rem auto;
-
-}
-
-#contact a {
-    padding: 12px;
-    background-color: var(--apple-green);
-    color: var(--white);
-    border-radius: 5%;
-
-}
-
-#contact p:last-child {
-    margin-top: 3rem;
-}
 
 nav {
     font-family: var(--mono);
@@ -191,6 +171,7 @@ nav li [class="nav-email"]:hover {
 }
 .intro-text{
     width: 50%;
+    margin: 60px 0;
 
 }
 
@@ -253,21 +234,36 @@ footer{
     margin-top: 0px;
     letter-spacing: 1.5px;
     color: var(--white);
+    margin-bottom: 0px;
 
+
+}
+.ad-link{
+    color: var(--black);
+    /* text-decoration: none; */
+
+    
+}
+.ad-link:hover{
+    text-decoration: none;
+    color: var(--white);
 
 }
 .top{
     position: fixed;
     right: 2.2rem;
     bottom: 2.2rem;
+    box-shadow: 0 0 5px var(--white);
+
 }
 
 .top i{
     color: #000000;
-    background: #0ef;
-    font-size: 20px;
+    /* background: #0ef; */
+    background-color: var(--apple-green);
+    font-size: 25px;
     padding: 10px;
-    border-radius: 0.5rem;
+    border-radius: 50%;
 
 }
 
@@ -276,4 +272,145 @@ footer{
 
 }
 
+#contact {
+    width: 100%;
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-top: 60px;
+    color:var(--black);
+    padding: 3rem auto;
 
+}
+
+#contact a {
+    padding: 12px;
+    
+    border-radius: 50%;
+
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+    padding-bottom: 70px;
+
+}
+
+.contact-text h2{
+    font-size: 52px;
+    line-height: 1;
+    text-align: center;
+    color:var(--black);
+    margin-bottom: 30px;
+
+}
+
+.contact-text h2 span{
+    color:var(--apple-green);
+}
+
+.contact-text h4{
+    margin: 15px 0;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.contact-text p{
+    font-size: 16px;
+    color: var(--black);
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 3rem;
+
+}
+.contact-list ul{
+    list-style-type: none;
+    color: var(--black);
+}
+.contact-list li{
+    margin-bottom: 10px;
+
+}
+
+
+.contact a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #081b29;
+
+}
+
+/* .contact-icons ul{
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-icons  i{
+  
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid var(--apple-green);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--apple-green);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: 0.5s ease;
+    /* opacity: 0; */
+    
+
+
+
+
+.contact-form form{
+    position: relative;
+}
+
+
+
+.contact-links {
+
+    width: 300px;
+    height: 56px;
+    display: flex;
+    
+    margin: 12px;
+
+}
+
+.contact-links a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid var(--apple-green);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--apple-green);
+    text-decoration: none;
+    margin: 6px 15px 6px 0;
+
+}
+.contact-links a:hover {
+    background: var(--apple-green);
+    color:var(--white);
+    box-shadow: 0 0 20px var(--apple-green);
+    transform: scale(1.01) translateY(-4px);
+    
+}
