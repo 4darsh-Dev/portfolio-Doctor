@@ -53,45 +53,8 @@ a:hover {
     text-decoration: none;
 }
 
-#intro {
-    padding: 0 4rem;
-    padding-bottom: 10rem;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
 
-}
-.intro-text{
-    width: 50%;
 
-}
-.intro-img{
-    width: 50%;
-    
-}
-
-#intro p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-#intro .name {
-    font-family: --var(mono);
-
-}
-
-.name span {
-    font-size: 4rem;
-    display: block;
-    font-family: var(--sans);
-    color: var(--apple-green);
-}
-
-#intro h2 {
-    font-size: 4rem;
-    font-weight: normal;
-
-}
 
 #contact {
     width: 400px;
@@ -207,3 +170,110 @@ nav li [class="nav-email"]:hover {
     color: var(--white);
 
 }
+.logo-img{
+    width: 35px;
+}
+.nav-list li:first-child{
+    font-size: 22px;
+
+}
+#intro {
+    padding: 0 4rem;
+    padding-bottom: 10rem;
+    /* grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem; */
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    
+
+}
+.intro-text{
+    width: 50%;
+
+}
+
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: --var(mono);
+
+}
+
+.name span {
+    font-size: 4rem;
+    display: block;
+    font-family: var(--sans);
+    color: var(--apple-green);
+}
+
+#intro h2 {
+    font-size: 3rem;
+    font-weight: normal;
+
+}
+.intro-img{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/jyoti-maurya-new.png);
+    background-size: contain;
+    z-index: 999;
+    background-repeat: no-repeat;
+
+
+    
+}
+
+.back-img-box{
+    width: 50%;
+    height: 50%;
+    background-color: var(--apple-green);
+    border-radius: 50%;
+
+}
+
+footer{
+    background-color: var(--apple-green);
+
+}
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding:25px 0;
+    /* background: rgb(7, 85, 91); */
+    font-weight: 500;
+    margin-top: 0px;
+    letter-spacing: 1.5px;
+    color: var(--white);
+
+
+}
+.top{
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+}
+
+.top i{
+    color: #000000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+
+}
+
+#heart{
+    color:var(--white);
+
+}
+
+
