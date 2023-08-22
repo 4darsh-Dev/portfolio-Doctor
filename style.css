@@ -221,6 +221,21 @@ nav li [class="nav-email"]:hover {
 
 }
 
+#about{
+    width:calc(100%-8rem);
+    padding: 0 4rem;
+    background-color: var(--almond);
+    height: 600px;
+    
+}
+
+.gradient{
+    height: 2px;
+
+    background: linear-gradient(90deg, rgba(255,153,51,1) 0%, rgba(141,182,0,1) 100%);
+}
+
+
 footer{
     background-color: var(--apple-green);
 
@@ -276,7 +291,7 @@ footer{
     width: 100%;
     /* text-align: center; */
     margin: 0 auto;
-    margin-top: 60px;
+    padding-top: 60px;
     color:var(--black);
     padding: 3rem auto;
 
@@ -349,32 +364,6 @@ footer{
     color: #081b29;
 
 }
-
-/* .contact-icons ul{
-    list-style-type: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.contact-icons  i{
-  
-    width: 40px;
-    height: 40px;
-    background:transparent;
-    border: 2px solid var(--apple-green);
-    border-radius: 50%;
-    font-size: 20px;
-    color: var(--apple-green);
-    text-decoration: none;
-    margin: 30px 15px 30px 0;
-    transition: 0.5s ease;
-    /* opacity: 0; */
-    
-
-
-
 
 .contact-form form{
     position: relative;
