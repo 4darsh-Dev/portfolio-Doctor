@@ -48,7 +48,9 @@ fetch("https://ayurupchar.onionreads.com/wp-json/wp/v2/posts")
       // ...
 
       const readMorePost = document.createElement("a");
-      readMorePost.innerText = "read more";
+      readMorePost.innerHTML = "Read more <i class='bx bxs-chevrons-right'></i>";
+
+      readMorePost.classList.add("read-more-link");
 
       // Set the link to the full post on the WordPress website
       readMorePost.setAttribute("href", post.link);
@@ -58,6 +60,7 @@ fetch("https://ayurupchar.onionreads.com/wp-json/wp/v2/posts")
       postPreview.appendChild(postImage);
       postPreview.appendChild(postHeading);
       postPreview.appendChild(postDescription);
+      postPreview.appendChild(readMorePost);
 
       // Append the post preview block to the main posts container
       postsContainer.appendChild(postPreview);
@@ -67,3 +70,8 @@ fetch("https://ayurupchar.onionreads.com/wp-json/wp/v2/posts")
   .catch(error => {
     console.error("Error fetching posts:", error);
   });
+
+
+
+
+
