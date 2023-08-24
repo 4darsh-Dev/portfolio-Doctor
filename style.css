@@ -177,6 +177,24 @@ nav li [class="nav-email"]:hover {
 
 }
 
+.blog-link{
+    padding: 12px 24px;
+    font-family: var(--font-head);
+    font-size: 18px;
+    background-color: var(--apple-green);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.blog-link:hover{
+    background-color: var(--black);
+    color: var(--white);
+    
+}
+
 
 #intro p {
     font-size: 1rem;
@@ -272,16 +290,25 @@ nav li [class="nav-email"]:hover {
     cursor: pointer;
     margin: 3rem 0.2rem;
     border: 1px solid #ccc;
+    padding-bottom: 3rem;
+    
+
 
 
 }
 .post-preview:hover{
     box-shadow: 8px 5px 7px #ccc;
+  
 
+}
+
+.post-preview:hover img{
+    transform: scale(1.1);
 }
 
 .post-preview img{
     width: 100%;
+    transition: transfrom 0.3 ease;
 
 }
 
@@ -298,60 +325,37 @@ nav li [class="nav-email"]:hover {
     padding: 0 6px;
 
 }
-
-
-
-
-footer{
-    background-color: var(--apple-green);
-
-}
-.last-text p{
-    width: 100%;
-    text-align: center;
-    padding:25px 0;
-    /* background: rgb(7, 85, 91); */
-    font-weight: 500;
-    margin-top: 0px;
-    letter-spacing: 1.5px;
-    color: var(--white);
-    margin-bottom: 0px;
-
-
-}
-.ad-link{
-    color: var(--black);
-    /* text-decoration: none; */
-
-    
-}
-.ad-link:hover{
-    text-decoration: none;
-    color: var(--white);
-
-}
-.top{
-    position: fixed;
-    right: 2.2rem;
-    bottom: 2.2rem;
-    box-shadow: 0 0 5px var(--white);
+.read-more{
+    display: none;
 
 }
 
-.top i{
-    color: #000000;
-    /* background: #0ef; */
-    background-color: var(--apple-green);
-    font-size: 25px;
+.read-more-link {
     padding: 10px;
-    border-radius: 50%;
+    background: var(--apple-green);
+    color: var(--black);
+    border-radius: 7px;
+    /* letter-spacing: 1px; */
+    position: relative;
+    top: 12px;
+    left: 12px;
+    font-size: 18px;
+    /* font-family:'Courier New', Courier, monospace; */
+
+
+
+
+}
+.read-more-link:hover{
+    /* box-shadow: 0 0 25px var(--apple-green); */
+    background-color: var(--black);
+    color: var(--white);
+
 
 }
 
-#heart{
-    color:var(--white);
 
-}
+
 
 #contact {
     width: 100%;
@@ -360,6 +364,7 @@ footer{
     padding-top: 60px;
     color:var(--black);
     padding: 3rem auto;
+    /* background-color: #fff; */
 
 }
 
@@ -468,4 +473,131 @@ footer{
     box-shadow: 0 0 20px var(--apple-green);
     transform: scale(1.01) translateY(-4px);
     
+}
+
+
+
+
+footer{
+    
+    height: auto;
+
+
+
+}
+.last-text{
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    height: 240px;
+
+}
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding:45px 0;
+    /* background: rgb(7, 85, 91); */
+    font-weight: 500;
+    margin-top: 0px;
+    letter-spacing: 1.5px;
+    color: var(--white);
+    margin-bottom: 0px;
+    font-size: 18px;
+    position: relative;
+    top: 120px;
+
+    
+
+}
+.last-new{
+    width: calc(100%-20rem);
+    margin: 0 10rem;
+    background-color: var(--deep-saffron);
+    height: 250px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 999;
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--sans);
+
+
+
+
+}
+
+.subscription-box{
+    position: relative;
+
+}
+
+.subscription-box input{
+    width: 40vw;
+    font-size: 18px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0px solid var(--deep-saffron);
+    padding: 0 24px;
+
+
+}
+
+.subscription-box a{
+    background-color: var(--apple-green);
+    color: var(--white);
+    /* height: 50px; */
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: var(--mono);
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    /* width: 10rem; */
+
+
+}
+.subscription-box a:hover{
+    background-color: var(--black);
+    color: var(--white);
+
+}
+
+.ad-link{
+    color: var(--deep-saffron);
+    /* text-decoration: none; */
+
+    
+}
+.ad-link:hover{
+    text-decoration: none;
+    color: var(--white);
+
+}
+.top{
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    box-shadow: 0 0 5px var(--white);
+
+}
+
+.top i{
+    color: #000000;
+    /* background: #0ef; */
+    background-color: var(--apple-green);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+#heart{
+    color:var(--deep-saffron);
+
 }
