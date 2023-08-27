@@ -76,11 +76,21 @@ nav {
     z-index: 99999;
 
 }
+.checkbtn{
+    font-size: 30px;
+    color:var(--apple-green);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
 
-/* .content-section {
-    margin-top: 60px; /* Adjust this value to match your navbar's height */
- 
+    cursor: pointer;
+    display: none;
+}
 
+#check{
+    display: none;
+    
+}
 .nav-list {
     list-style-type: none;
     display: flex;
