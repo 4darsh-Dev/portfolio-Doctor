@@ -1,5 +1,10 @@
 console.log("I am working!");
 
+
+const author = "Adarsh Maurya!";
+
+console.log(`Developer ${author}`);
+
 fetch("https://ayurupchar.onionreads.com/wp-json/wp/v2/posts")
   .then(response => response.json())
   .then(posts => {
@@ -26,6 +31,7 @@ fetch("https://ayurupchar.onionreads.com/wp-json/wp/v2/posts")
 
       const postHeading = document.createElement("h2");
       postHeading.innerHTML = post.title.rendered;
+      postHeading.classList.add("post-heading");
 
       const MAX_DESCRIPTION_WORDS = 80;
 
@@ -75,3 +81,23 @@ fetch("https://ayurupchar.onionreads.com/wp-json/wp/v2/posts")
 
 
 
+  let menuBtnCond = true;
+  let checkLabel = document.getElementById("check-label");
+  
+  const menuBtnChanger = function(){
+  
+      if (menuBtnCond){
+          checkLabel.innerHTML = `<i class='bx bx-x'></i>`;
+          menuBtnCond = false;
+      }
+  
+      else{
+          checkLabel.innerHTML = `<i class='bx bx-menu'></i>`;
+  
+          menuBtnCond = true;
+      }
+  
+  }
+  
+  let menuBtn = document.getElementById("check");
+  menuBtn.addEventListener("click", menuBtnChanger);
