@@ -69,7 +69,7 @@ nav {
 
 #navbar {
     font-size: var(--font-size);
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     background-color: var(--white);
     width: 100%;
@@ -91,16 +91,38 @@ nav {
     display: none;
     
 }
-.nav-list {
+.menu-list {
+    float: right;
     list-style-type: none;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     margin: 0;
-    padding: 0;
-    flex-flow: row wrap;
-    justify-content: center;
+    padding: 6px;
+    /* flex-flow: row wrap; */
+    /* justify-content: center; */
     align-items: center;
     gap: 2rem;
+
+
+}
+.logo{
+    font-size: 22px;
+    font-family: var(--mono);
+    font-weight: 500;
+    color: #eff;
+    /* margin: 12px 6vw; */
+    padding: 6px;
+    display: inline-block;
+    
+}
+.logo h1 a{
+    color: var(--black);
+    font-family: var(--sans);
+    text-decoration: none;
+}
+
+.logo h1 a:hover{
+    color: var(--earth-green);
 
 }
 
@@ -120,11 +142,11 @@ nav h1 a i:hover {
 
 }
 
-nav li:first-child {
+/* nav li:first-child {
     /*   flex-basis:100%; */
-    text-align: left;
+    /* text-align: left;
     margin-right: auto;
-}
+} */ 
 
 nav [class*="bxl-"] {
     font-size: 150%;
@@ -135,14 +157,18 @@ nav h1 [class*="bxl-"] {
     font-size: 100%;
 
 }
+.nav-ul-social{
+    display: inline-block;
+}
 
-.nav-list li a {
+
+.menu-list li a {
     text-decoration: none;
     color: var(--black);
     display: block;
 }
 
-.nav-list li a:hover {
+.menu-list li a:hover {
     color: var(--apple-green);
 }
 
@@ -156,6 +182,7 @@ nav li:last-child {
     color: var(--white);
     border-radius: 5%;
     font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 nav li:last-child:hover {
@@ -177,10 +204,7 @@ nav li [class="nav-email"]:hover {
 .logo-img{
     width: 35px;
 }
-.nav-list li:first-child{
-    font-size: 22px;
 
-}
 #intro {
     padding: 0 4rem;
     padding-bottom: 10rem;
@@ -190,7 +214,7 @@ nav li [class="nav-email"]:hover {
     display: flex;
     flex-direction: row;
     gap: 6rem;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     
 
 }
@@ -209,6 +233,7 @@ nav li [class="nav-email"]:hover {
     font-weight: 600;
     border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 
 }
 
@@ -249,7 +274,7 @@ nav li [class="nav-email"]:hover {
     align-items: center;
     background-image: url(/img/jyoti-maurya-lite.webp);
     background-size: contain;
-    z-index: 999;
+    /* z-index: 999; */
     background-repeat: no-repeat;
 
 
@@ -270,6 +295,13 @@ nav li [class="nav-email"]:hover {
     background-color: var(--deep-saffron);
     height: auto;
     
+}
+
+.about h2{
+    font-family: var(--font-head);
+    font-size: 42px;
+    color: var(--black);
+    /* padding: 12px 0; */
 }
 
 .about-main{
@@ -450,7 +482,7 @@ nav li [class="nav-email"]:hover {
     left: 12px;
     font-size: 18px;
     /* font-family:'Courier New', Courier, monospace; */
-
+    transition: background-color 0.3 ease;
 
 
 
@@ -671,6 +703,7 @@ footer{
     text-decoration: none;
     font-size: 18px;
     /* width: 10rem; */
+    transition: background-color 0.3s ease;
 
 
 }
