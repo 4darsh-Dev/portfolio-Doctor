@@ -306,6 +306,11 @@
 
 
     }
+    .blog-link{
+        padding: 10px;
+        font-size: 16px;
+        
+    }
     
     #intro h2{
         font-size: 20px;
