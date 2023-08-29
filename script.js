@@ -23,11 +23,13 @@ fetch("https://ayurupchar.onionreads.com/wp-json/wp/v2/posts")
       const postImage = document.createElement("img");
 
       // Adding fallback image and URL configuration
-      if (post.featured_media_url) {
-        postImage.src = post.featured_media_url;
+      if (post.featured_image_src) {
+        postImage.src = post.featured_image_src;
       } else {
         postImage.src = "/img/sample-blog.webp";
       }
+      // console.log(post.featured_image_src);
+      // postImage.src = post.featured_image_src;
 
       const postHeading = document.createElement("h2");
       postHeading.innerHTML = post.title.rendered;
